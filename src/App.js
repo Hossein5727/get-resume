@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import resume from './assets/hossein-ghiasi-resume.pdf'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full h-[100vh] text-white text-center bg-gradient-to-r from-purple-400 to-blue-600">
+      <h1 className="text-4xl pt-5 ">خوش آمدید</h1>
+      <a href={resume} download className='bg-yellow-500 inline-block mt-10 w-[450px] px-5 py-2 rounded-sm text-2xl animate-bounce '>برای دریافت رزومه حسین غیاثی کلیک کنید</a>
     </div>
   );
 }
